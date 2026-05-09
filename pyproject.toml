@@ -1,0 +1,39 @@
+[project]
+name = "veryfi-invoice-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Juan David Rengifo Castro", email = "jdrengifoc@eafit.edu.co" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "veryfi>=5.0.1",
+]
+
+[project.scripts]
+veryfi-invoice-extractor = "veryfi_invoice_extractor:main"
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.0.0",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.15.12",
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]
+
+# veryfi is a third-party library that may not have type hints.
+[[tool.mypy.overrides]]
+module = "veryfi.*"
+ignore_missing_imports = true
