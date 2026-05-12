@@ -1,0 +1,39 @@
+Your Company Name
+$
+	Your Business Address
+	City
+Invoice
+	Country
+	Postal
+
+BILL TO:
+	INVOICE #
+Company Name											0000001
+Address												DATE
+City												12/31/20
+Country											INVOICE DUE DATE
+Postal												12/31/20
+
+ITEMS	DESCRIPTION					QUANTITY	PRICE	TAX	AMOUNT
+
+Item 1	Description						1	$0	0%	$000.00
+
+Item 1	Description						1	$0	0%	$000.00
+
+Item 1	Description						1	$0	0%	$000.00
+
+Item 1	Description						1	$0	0%	$000.00
+
+Item 1	Description						1	$0	0%	$000.00
+
+Item 1	Description						1	$0	0%	$000.00
+
+NOTES:
+	TOTAL
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut nisi
+tempus massa blandit luctus.								$00000.00
+
+Powered by wave
+
+This invoice was generated with the help of Wave Financial Inc.
+To learn more, and create your own free account visit waveapps.com

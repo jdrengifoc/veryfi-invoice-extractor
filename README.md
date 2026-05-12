@@ -10,7 +10,7 @@ and `uv.lock` to create a `.venv/` with the exact versions used during
 development.
 
 ```bash
-git clone https://github.com/jdrengifoc13/veryfi-invoice-extractor.git
+git clone https://github.com/jdrengifoc/veryfi-invoice-extractor.git
 cd veryfi-invoice-extractor
 uv sync
 ```
@@ -37,17 +37,29 @@ uv run pytest              # run unit tests with coverage
 
 Configuration for each tool lives in `pyproject.toml`.
 
-### Running the sandbox
+### Running the pipeline
 
-The sandbox script processes one invoice via the Veryfi API and persists
-the raw response and isolated `ocr_text` for inspection:
+The pipeline runs in two stages. Put the PDFs to process under
+`data/00-inputs/` and make sure your Veryfi credentials are set in `.env`.
+
+**1. Fetch and cache** the OCR output from the Veryfi API for every PDF in
+`data/00-inputs/`. Results are persisted under `data/01-veryfi_outputs/`
+so the API is only called once per document.
 
 ```bash
-uv run python scripts/sandbox.py
+uv run python scripts/01-fetch_all.py
 ```
 
-Outputs are written to `data/01-veryfi_outputs/`. Make sure your Veryfi
-credentials are set in `.env` before running.
+**2. Process** the cached `ocr_text` files: validate format, parse fields,
+and write JSON to `data/02-results/`. Documents that do not match the
+Switch invoice template are rejected with a `WARNING` in the log.
+
+```bash
+uv run python scripts/02-process.py
+```
+
+Logs from the processing step are written to both stdout and
+`logs/process.log`.
 
 ## AI assistance disclosure
 

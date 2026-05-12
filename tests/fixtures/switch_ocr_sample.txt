@@ -1,0 +1,39 @@
+Invoice
+	Page 1 of 1
+switch	Anytown, ST 00000-0000
+PO Box 000000
+
+	Invoice Date Due Date	Invoice No.
+	01/01/24	12/31/24	1000000
+
+John Doe
+123 Main Street,
+Anytown
+
+Account No.			P.O. Number
+	Services for month of January
+A-00000000				PO-0000-0000
+Description				Quantity	Rate	Amount
+Transport | Switch Fiber Pair (Intra-campus) | Pairs (0000000000) (01/2024|10 Gbps Fiber	1,000.00	100.00	100,000.00
+to ABCDEF (XXXXXXXX) (01/2024)
+Carrier Taxes for Transport | 100 Gbps Wavelength Diverse between CityA, ST 00000 and	2,000.00	200.00	400,000.00
+CityB, ST 00000 (XXXXXX) (XXXXXXXX) (01/2024 Taxes) (01/2024)
+Special Partnership Discount (01/2024)					1.00	-50.00	-50.00
+Item Discount: Special Partnership Discount (01/2024)				1.00	-25.00	-25.00
+Transport | 50 Gbps Fiber to ABCDEFGHIJ (XXXXXXXX) (01/2024)			3,000.00	300.00	900,000.00
+Carrier Taxes for Transport | 50 Gbps Wavelength Diverse between CityC, ST 00000	4,000.00	400.00	1,600,000.00
+and CityD, ST 00000 (XXXXXX) (XXXXXXXX) (01/2024 Taxes) (01/2024)
+Transport | 50 Gbps Fiber to ABCDEF (XXXXXXXX) (01/2024)			5,000.00	500.00	2,500,000.00
+
+	Total USD	$5,000,000.00
+
+Please update your system with our new remittance instruction located on this invoice. Please contact accounts receivable@switch.com with any
+questions.
+
+Please make payments to: Switch, Ltd.
+Wire/ACH Payment: PNC Bank, N.A.	Account No.:0000000000 ACH Routing:000000000 Wire Routing: 000000000 SWIFT:XXXXXXXX
+For questions, please call or email Accounts Receivable Department.
+Phone No.	Fax No.			E-Mail					Web Site
+000.000.0000	000.000.0000	accountsreceivable@switch.com			www.switch.com
+Please remit payment for amount due. If payment submitted is different from amount due, a detailed statement of where to apply the funds must be included
+with payment.
