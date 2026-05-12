@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from veryfi-invoice-extractor!")
+# src/veryfi_invoice_extractor/__init__.py

@@ -15,7 +15,7 @@ LOG_FILE = LOGS_DIR / "process.log"
 logger = logging.getLogger(__name__)
 
 
-def save_invoice(invoice: dict, txt_path: Path) -> Path:
+def save_invoice(invoice: dict[str, object], txt_path: Path) -> Path:
     """Persist the parsed invoice as JSON in RESULTS_DIR."""
     base_name = txt_path.stem.removesuffix("_ocr")
     output_path = RESULTS_DIR / f"{base_name}.json"
